@@ -9,7 +9,13 @@
 <div>
     <h4>Customer</h4>
     <hr />
-    <dl class="dl-horizontal">
+    @Model.FirstName @Model.LastName will retire in @ViewBag.NumberOfYears years with
+    @ViewBag.AmountOfMoney in the bank, a vacation home in @ViewBag.Location.
+
+   
+
+
+    @*<dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.FirstName)
         </dt>
@@ -58,7 +64,7 @@
             @Html.DisplayFor(model => model.Sibling.SiblingsID)
         </dd>
 
-    </dl>
+    </dl>*@
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerID }) |
