@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Fortune_Teller_MVC.Models.Sibling>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NumberOfSiblings)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfSiblings)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SiblingsID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SiblingsID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SiblingsID })
+        </td>
+    </tr>
+}
+
+</table>

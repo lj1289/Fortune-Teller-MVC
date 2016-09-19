@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="789f1d3fb46d4976919710676667612c" Name="Diagram1">
+        <EntityTypeShape EntityType="FortuneTellerMVCModel.BirthMonth" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FortuneTellerMVCModel.Color" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FortuneTellerMVCModel.Customer" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="FortuneTellerMVCModel.Sibling" Width="1.5" PointX="5.75" PointY="1.625" IsExpanded="true" />
+        <AssociationConnector Association="FortuneTellerMVCModel.FK_Customers_BirthMonth" ManuallyRouted="false" />
+        <AssociationConnector Association="FortuneTellerMVCModel.FK_Customers_Colors" ManuallyRouted="false" />
+        <AssociationConnector Association="FortuneTellerMVCModel.FK_Customers_Siblings" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
